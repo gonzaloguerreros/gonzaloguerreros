@@ -1,64 +1,36 @@
-# Hi, I'm Gonzalo Guerreros 👋
+# Gonzalo Guerreros
 
-**Product Analyst** | B2B Marketplaces & Food Tech | Boston, MA
-
-I'm an Industrial Engineer transitioning into data-driven product analytics. My background is in operational performance analysis and auditing at scale (Gategroup, one of the world's largest airline catering companies). I build analyses that connect raw operational data to decisions product and business teams can act on.
+Industrial Engineer → Product Analyst &nbsp;·&nbsp; Boston, MA &nbsp;·&nbsp; Looking for work
 
 ---
 
-## 🗂️ Portfolio Projects
+I spent several years at Gategroup (airline catering) doing labour utilisation analysis and operational audits. Most of that work was in Excel. I wanted to actually know SQL and Python — not just use them occasionally — so I rebuilt those skills properly and documented it here.
 
-### 🍽️ Corporate Catering Operations — SQL
-> PostgreSQL schema design + 4 analytical query sets covering supplier performance, GMV growth, account retention cohorts, and promotional ROI. Mirrors the data model of a B2B catering marketplace.
-
-**Techniques:** CTEs · Window functions (LAG, NTILE, ROW_NUMBER) · ENUM types · Index strategy · Pareto analysis · Churn risk scoring
-
-[![View Repo](https://img.shields.io/badge/View_Repo-181717?style=for-the-badge&logo=github)](https://github.com/gonzaloguerreros/catering-operations-sql)
+These projects are focused on food tech and B2B marketplaces because that's the industry I know and where I'm applying.
 
 ---
 
-### 🧪 Promotional Campaign A/B Test — Python
-> End-to-end experiment analysis for a 20% discount campaign on a catering marketplace. Covers hypothesis testing, power analysis, subgroup analysis with Bonferroni correction, and business ROI calculation.
+## Projects
 
-**Techniques:** Two-proportion z-test · Welch's t-test · Mann-Whitney U · Statistical power & MDE · Confidence intervals · Campaign ROI
+**[Corporate Catering Operations — PostgreSQL](https://github.com/gonzaloguerreros/catering-operations-sql)**
+Built the schema from scratch, then wrote four sets of analytical queries: supplier delivery performance, revenue trends, account retention cohorts, and promo ROI. The retention query turned out to be the most interesting — flags accounts that have gone quiet relative to their own historical ordering cadence.
 
-[![View Repo](https://img.shields.io/badge/View_Repo-181717?style=for-the-badge&logo=github)](https://github.com/gonzaloguerreros/catering-ab-test-python)
+**[A/B Test Analysis — Python](https://github.com/gonzaloguerreros/catering-ab-test-python)**
+Full experiment analysis for a simulated discount campaign. Wrote the statistical tests, power analysis, and Bonferroni-corrected subgroup analysis. Result was "do not ship" — the conversion lift wasn't detectable at sample size, but first-order spend was genuinely higher. 21 unit tests.
 
----
+**[Review Intelligence — NLP](https://github.com/gonzaloguerreros/catering-review-nlp-python)**
+Took NLP in my Master's and wanted to apply it to something real. Scores 1,200 catering reviews with VADER + TextBlob, then uses LDA to find what topics people are actually complaining about. Exports to Tableau. 17 unit tests.
 
-### 🔍 Review Intelligence — NLP Python
-> Automated pipeline that classifies 1,200 catering marketplace reviews by sentiment and discovers underlying complaint themes using unsupervised topic modeling. Exports Tableau-ready files for a live supplier health dashboard.
-
-**Techniques:** VADER sentiment · TextBlob subjectivity · LDA topic modeling · Text preprocessing · Net Sentiment Score · Tableau export
-
-[![View Repo](https://img.shields.io/badge/View_Repo-181717?style=for-the-badge&logo=github)](https://github.com/gonzaloguerreros/catering-review-nlp-python)
+**[Price Optimization — Monte Carlo](https://github.com/gonzaloguerreros/OJ_Optimization)**
+Graduate-level pricing project. Log-log regression for elasticity, then 10,000 Monte Carlo simulations to get a confidence band on the optimal price rather than a point estimate.
 
 ---
 
-### 🧃 Orange Juice Price Optimization — Python
-> Regression-based price elasticity analysis on a retail OJ dataset with 5 competing products. Estimates optimal pricing using log-log demand models, cross-price effects, and promotional feature analysis.
+## Stack
 
-**Techniques:** Log-log regression · Price elasticity · Cross-price effects · Feature/display impact · statsmodels · seaborn
-
-[![View Repo](https://img.shields.io/badge/View_Repo-181717?style=for-the-badge&logo=github)](https://github.com/gonzaloguerreros/OJ_Optimization)
+`PostgreSQL` `Python` `pandas` `scipy` `statsmodels` `scikit-learn` `NLTK` `Tableau` `pytest` `GitHub Actions`
 
 ---
 
-## 🛠️ Tech Stack
-
-| Category | Tools |
-|----------|-------|
-| **Databases** | PostgreSQL · SQL |
-| **Languages** | Python · SQL |
-| **Analysis** | pandas · numpy · scipy · statsmodels · scikit-learn |
-| **NLP** | NLTK · TextBlob · scikit-learn LDA |
-| **Visualisation** | Tableau · matplotlib · seaborn · WordCloud |
-| **Methods** | A/B Testing · Regression · NLP · Cohort Analysis · Price Elasticity |
-
----
-
-## 📬 Let's Connect
-
-I'm actively looking for Product Analyst roles in food tech and B2B marketplaces.
-
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/gonzaloguerreros)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat&logo=linkedin&logoColor=white)](https://linkedin.com/in/gonzaloguerreros)
+[![Website](https://img.shields.io/badge/Portfolio-gonzaloguerreros.github.io-1a2f55?style=flat)](https://gonzaloguerreros.github.io)
